@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <!--android:layout_gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="@dimen/activity_vertical_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+
+        <TableRow android:layout_marginTop="60dp">
+
+            <Button
+                android:id="@+id/btn_num_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:onClick="transmitIt"
+                android:text="@string/num1" />
+
+            <Button
+                android:id="@+id/btn_num_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:onClick="transmitIt"
+                android:text="@string/num2" />
+
+            <Button
+                android:id="@+id/btn_num_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:onClick="transmitIt"
+                android:text="@string/num3" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_num_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:onClick="transmitIt"
+                android:text="@string/num4" />
+
+            <Button
+                android:id="@+id/btn_num_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:onClick="transmitIt"
+                android:text="@string/num5" />
+
+            <Button
+                android:id="@+id/btn_num_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:onClick="transmitIt"
+                android:text="@string/num6" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_num_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:onClick="transmitIt"
+                android:text="@string/num7" />
+
+            <Button
+                android:id="@+id/btn_num_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:onClick="transmitIt"
+                android:text="@string/num8" />
+
+            <Button
+                android:id="@+id/btn_num_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:onClick="transmitIt"
+                android:text="@string/num9" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="60dp">
+
+            <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_column="1"-->
+            <!--android:text="@string/num7" />-->
+
+            <Button
+                android:id="@+id/btn_num_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:onClick="transmitIt"
+                android:text="@string/num0" />
+
+            <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_column="3"-->
+            <!--android:text="@string/num9" />-->
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>

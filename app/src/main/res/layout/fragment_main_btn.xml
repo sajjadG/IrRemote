@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+    <!--tools:showIn="@layout/app_bar_main"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/btn_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="transmitIt"
+            android:text="@string/power" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:onClick="transmitIt"
+            android:text="Menu" />
+
+        <ImageButton
+            android:id="@+id/btn_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="9"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:layout_row="0"
+            android:background="@android:color/transparent"
+            android:contentDescription="Mute Device"
+            android:onClick="transmitIt"
+            android:src="@android:drawable/ic_lock_silent_mode" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_left_arrow"
+            android:layout_alignBottom="@+id/btn_left_arrow"
+            android:layout_alignStart="@+id/btn_up_arrow"
+            android:onClick="transmitIt"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btn_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_toStartOf="@+id/btn_up_arrow"
+            android:onClick="transmitIt"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/btn_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_ok"
+            android:layout_alignBottom="@+id/btn_ok"
+            android:layout_toEndOf="@+id/btn_ok"
+            android:onClick="transmitIt"
+            android:text="Right" />
+
+        <Button
+            android:id="@+id/btn_down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_ok"
+            android:layout_toEndOf="@+id/btn_left_arrow"
+            android:onClick="transmitIt"
+            android:text="Down" />
+
+        <Button
+            android:id="@+id/btn_up_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_ok"
+            android:layout_centerHorizontal="true"
+            android:onClick="transmitIt"
+            android:text="UP" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="transmitIt"
+            android:text="Exit" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:onClick="transmitIt"
+            android:text="Back" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="transmitIt"
+        android:text="last" />
+</LinearLayout>

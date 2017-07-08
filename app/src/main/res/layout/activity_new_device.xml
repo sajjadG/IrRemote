@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nullpx.irremote.DeviceSelectionActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkableBehavior="single"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ib_tv"
+            android:onClick="btnDeviceOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:drawableTop="@drawable/ic_menu_gallery"
+            android:text="@string/tv"
+            android:textOff="@string/tv"
+            android:textOn="@string/tv"
+            app:srcCompat="@drawable/ic_live_tv_black_24dp" />
+
+        <RadioButton
+            android:id="@+id/ib_ac"
+            android:onClick="btnDeviceOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:drawableTop="@drawable/ic_menu_slideshow"
+            android:text="@string/ac"
+            android:textOff="@string/ac"
+            android:textOn="@string/ac"
+            app:srcCompat="@drawable/ic_menu_send" />
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/ib_fan"-->
+            <!--android:onClick="btnDeviceOnClick"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:drawableTop="@drawable/ic_menu_gallery"-->
+            <!--android:text="@string/fan"-->
+            <!--android:textOff="@string/fan"-->
+            <!--android:textOn="@string/fan"-->
+            <!--app:srcCompat="@drawable/ic_menu_share" />-->
+
+        <RadioButton
+            android:id="@+id/ib_receiver"
+            android:onClick="btnDeviceOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:drawableTop="@drawable/ic_menu_manage"
+            android:text="@string/receiver"
+            android:textOff="@string/receiver"
+            android:textOn="@string/receiver"
+            app:srcCompat="@drawable/ic_invert_colors_black_24dp" />
+
+        <RadioButton
+            android:id="@+id/ib_projector"
+            android:onClick="btnDeviceOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:drawableTop="@drawable/ic_menu_manage"
+            android:text="@string/projector"
+            android:textOff="@string/projector"
+            android:textOn="@string/projector"
+            app:srcCompat="@drawable/ic_invert_colors_black_24dp" />
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingBottom="25dp">
+
+        <LinearLayout
+            android:id="@+id/rg_brands"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<Button-->
+                <!--android:id="@+id/add_new_brand"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:enabled="false"-->
+                <!--android:text="@string/add_new_brand" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:onClick="btnSelectOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="Select" />
+
+</LinearLayout>
